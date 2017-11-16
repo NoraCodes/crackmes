@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// A less simple crackme which has its own string comparison function and uses
+// a hardcoded, unchanging transform over a hardcoded password.
+
 int main(int argc, char** argv) {
 
     if (argc != 2) {

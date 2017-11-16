@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 
+// A very simple crackme which stores the correct password in program memory
+// and uses the builtin string comparison function to check it.
+
 int main(int argc, char** argv) {
 
     if (argc != 2) {
