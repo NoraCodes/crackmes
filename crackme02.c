@@ -7,7 +7,7 @@
 int main(int argc, char** argv) {
 
     if (argc != 2) {
-        printf("Need exactly two arguments.\n");
+        printf("Need exactly one argument.\n");
         return -1;
     }
 
