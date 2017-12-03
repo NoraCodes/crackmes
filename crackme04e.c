@@ -3,11 +3,10 @@
 #include <stdlib.h>
 
 // Never stores the correct password; instead, accepts any password
-// whose length is 16 and whose characters, in ASCII, sum to 1652.
-// This is 16 * 110 + 2, so the characters average on 'n', but two must be higher.
+// whose length is 32 and whose characters, in ASCII, sum to 3542.
 
-#define CORRECT_LEN 16
-#define CORRECT_SUM 1762
+#define CORRECT_LEN 32
+#define CORRECT_SUM 3542
 
 int main(int argc, char** argv) {
 

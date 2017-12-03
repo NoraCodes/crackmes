@@ -3,7 +3,7 @@
 
 // This crackme adds a hardcoded mask to its hardcoded password.
 
-#define CORRECT_LEN 6
+#define CORRECT_LEN 8
 
 // Returns one if the given password is equal to the given correct word masked
 // with the given mask.
@@ -29,9 +29,8 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    char correct[CORRECT_LEN + 1] = "lAmBdA";
-    char mask[CORRECT_LEN + 1] = {2, 3, 2, 3, 5};
-    // This makes the real password "nDoEiA"
+    char correct[CORRECT_LEN + 1] = "password";
+    char mask[CORRECT_LEN + 1] = {3, 5, 2, 4, 1, 0, 3, 1};
     
     if (strlen(argv[1]) == CORRECT_LEN && check_pw(argv[1], correct, mask)) {
         printf("Yes, %s is correct!\n", argv[1]);
