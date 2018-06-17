@@ -36,7 +36,7 @@ int main(int argc, char** argv) {
         return -1;
     }
 
-    if (strncmp("leotindall.com", buffer, 16) != 0) {
+    if (strncmp("leotindall.com", buffer, 14) != 0) {
         fail();
     }
     
