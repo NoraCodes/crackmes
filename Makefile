@@ -12,7 +12,7 @@ CCFLAGS64 := $(CCFLAGS) -m64
 # Build 64 bit binaries
 %.64: %.c
 	$(CC) $(CCFLAGS64) $< -o $@
-	objcopy -N FILE $@
+	objcopy -g $@
 
 # Determine all C programs in directory
 SRCS = $(wildcard *.c)
