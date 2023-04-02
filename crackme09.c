@@ -4,7 +4,7 @@
 #include <cpuid.h>
 
 // Require that the input string pass a state machine matching:
-// Qz+327x*n+[l9]+
+// Qz+327x*[^n]n+(l9)+
 
 void succeed(char* string) {
     printf("Yes, %s is correct!\n", string);
